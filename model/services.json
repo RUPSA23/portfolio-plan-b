@@ -1,0 +1,17 @@
+[
+    {
+        "services_title": "Web Design",
+        "services_description": "Cool",
+        "services_icon": "fa fa-laptop"
+    },
+    {
+        "services_title": "Web Backend",
+        "services_description": "Its Hot",
+        "services_icon": "fa fa-laptop"
+    },
+    {
+        "services_title": "Web Frontend",
+        "services_description": "Muu",
+        "services_icon": "fa fa-laptop"
+    }
+]
