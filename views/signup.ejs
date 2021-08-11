@@ -1,6 +1,10 @@
 <link href="css/signup.css" rel="stylesheet">
 <form action="/signup"  method="POST"  style="border:1px solid #ccc">
     <div class="container">
+      <% if (errorMessage) { %>
+        <div class="user-message user-message--error"><%= errorMessage %></div>
+        <% } %>
+
       <h1>Sign Up</h1>
       <p>Please fill in this form to create an account.</p>
       <hr>
@@ -11,8 +15,8 @@
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
   
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <label for="repeatPassword"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="repeatPassword" required>
   
       <!-- <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
