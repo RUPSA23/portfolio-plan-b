@@ -26,6 +26,12 @@ router.post('/login',
 
 router.get('/logout', authController.getLogout);
 
+router.get('/form', authController.getForm);
+
+router.post('/form', authController.postForm);
+
+router.get('/:userId', authController.getuserid);
+
 router.post('/signup',
 [ 
     check('email') 
